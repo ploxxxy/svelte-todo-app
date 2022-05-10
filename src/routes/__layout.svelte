@@ -16,7 +16,7 @@
 	})
 </script>
 
-<div class="container mx-auto my-6 max-w-lg">
+<div class="container mx-auto max-w-lg">
 	{#if $user}
 		<Navbar />
 		<slot />

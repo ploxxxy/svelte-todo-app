@@ -10,10 +10,11 @@
 </script>
 
 <form class="my-6" on:submit|preventDefault={handleSubmit}>
-    <div class="flex flex-col text-sm mb-2">
-        <label class="font-bold mb-2" for="todo">Todo</label>
-        <input class="appearance-none shadow-sm border border-gray-200 p-2 focus:outline-none focus:border-gray-500 rounded-lg" 
-        type="text" bind:value={todo} name="todo" placeholder="What to do?">
-    </div>
-    <button class="w-full shadow-sm rounded bg-blue-600 hover:bg-blue-700 text-white py-2 px-4" type="submit">Submit</button>
+    <div class="form-control w-full">
+        <label class="label" for="todo">
+          <span class="label-text">Todo</span>
+        </label>
+        <input type="text" bind:value={todo} placeholder="What to do?" class="input input-bordered w-full" />
+        <button type="submit" class="btn btn-primary w-full my-2">Submit</button>
+      </div>
 </form>
